@@ -7,3 +7,7 @@ const server = http.createServer(app);
 const io = new Server(server);
 
 app.use(express.static("public"));
+
+server.listen(3000, () => {
+  console.log("listening on *:3000");
+});
